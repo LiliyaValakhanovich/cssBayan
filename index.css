@@ -1,0 +1,102 @@
+.conteiner{
+  width: 50vw;
+  height: 100vh;
+  margin:0 auto;
+}
+
+.context{
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.title{
+  color:blue;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.label{
+  display: grid;
+  grid-template-columns: 1fr 3em; 
+}
+
+.img{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width:320px){
+  .context:hover .title{
+    cursor: grab;
+    color:black;
+  }
+  .image1, .image2, .image3, .image4, .image5{
+    width: 25rem;
+    height: 20rem;
+    display:none;
+  }
+  
+  .item1:hover, .image1{
+    display:block;
+  }
+  
+  .item2:hover .image2{
+    display:block;
+  }
+  
+  .item3:hover .image3{
+    display:block;
+  }
+  
+  .item4:hover .image4{
+    display:block;
+  }
+  
+  .item5:hover .image5{
+    display:block;
+  } 
+  
+}
+@media screen and (max-width:820px){
+  .image{
+    width: 18rem;
+    height: 13rem;
+  }
+  .title{
+    font-size: 1.2rem;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width:480px){
+  .image{
+    width: 12rem;
+    height: 9rem;
+  }
+  .title{
+    font-size: 0.9rem;
+  }
+  h1{
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width:320px){
+  .image{
+    width: 7rem;
+    height: 5rem;
+  }
+  .title{
+    font-size: 0.5rem;
+  }
+  h1{
+    font-size: 0.7rem;
+  }
+}
+
+
+
+
+
